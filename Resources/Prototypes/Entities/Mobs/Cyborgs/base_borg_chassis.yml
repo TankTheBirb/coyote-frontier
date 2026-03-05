@@ -109,7 +109,9 @@
   - type: LockingWhitelist
     blacklist:
       components:
-      - BorgChassis
+      #COYOTE TWEAK: We want borgs to be able to fix eachother and themselves
+      #- BorgChassis
+      #END COYOTE
       - RoboticsConsole
   - type: WiresPanel
     openingTool: Prying
