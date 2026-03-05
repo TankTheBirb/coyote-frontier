@@ -1,7 +1,6 @@
 - type: vendingMachineInventory
   id: CuddlyCritterVendInventory
   startingInventory:
-    Clicker: 3 # Coyote Sector
     PlushieBee: 3
     PlushieHampter: 3
     PlushieLizard: 3
@@ -41,6 +40,7 @@
     PonderingOrb: 1
     CrayonBox: 10
     CrayonRainbow: 5
+    Clicker: 3 # Coyote Sector
     WeaponWaterPistol: 8
     WeaponWaterBlaster: 4
     TargetDartsFlatpack: 1
