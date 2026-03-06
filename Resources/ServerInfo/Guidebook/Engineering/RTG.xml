@@ -18,9 +18,9 @@
     <GuideEntityEmbed Entity="GeneratorCoolRTG" Caption="B-RTG" />
     <GuideEntityEmbed Entity="VendingMachineExpeditionaryFlatpackVend" Caption="Expeditionary FlatpackVend" />
   </Box>
-  The B-RTGs works the same way as a standard RTG, Only that it provides up to [color=orange][protodata="GeneratorCoolRTG" comp="PowerSupplier" member="MaxSupply" format="N0"/] W[/color] of power.
+  The B-RTG works the same way as a standard RTG, Only that it provides up to [color=orange][protodata="GeneratorCoolRTG" comp="PowerSupplier" member="MaxSupply" format="N0"/] W[/color] of power.
 
-  Pruchasable only through Expeditionary FlatpackVend, providing a exclusive, high-priced but reliable source of power for long shifts.
+  Pruchasable only through a Expeditionary FlatpackVend, it provides a exclusive, high-priced but reliable source of power for long shifts.
 
   ## RTG Damage
   <Box>
