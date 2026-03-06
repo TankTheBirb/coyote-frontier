@@ -45,11 +45,13 @@ using Robust.Shared.Spawners;
 using Content.Shared.DeviceLinking;
 using Robust.Shared.Timing;
 using System.ComponentModel;
+using Content.Server.GameTicking; // Coyote
 
 namespace Content.Server._EE.Supermatter.Systems;
 
 public sealed partial class SupermatterSystem
 {
+    [Dependency] private readonly GameTicker _gameTicker = default!; // Coyote
     /// <summary>
     /// Handle power and radiation output depending on atmospheric things.
     /// </summary>
@@ -707,6 +709,9 @@ public sealed partial class SupermatterSystem
 
         // Add hallucinations to every player on the map
         // TODO: change this from paracusia to actual hallucinations whenever those are real
+        // Coyote Start: Removes checks, instead starts a hallucination gamerule, which theoretically ensures the comp is deleted once it's over.
+        _gameTicker.StartGameRule("CSSupermatterHallucination");
+        /*
         var mobLookup = new HashSet<Entity<MobStateComponent>>();
         _entityLookup.GetEntitiesOnMap<MobStateComponent>(mapId, mobLookup);
 
@@ -728,7 +733,8 @@ public sealed partial class SupermatterSystem
                 _paracusia.SetTime(mob, paracusiaMinTime, paracusiaMaxTime, paracusia);
                 _paracusia.SetDistance(mob, paracusiaDistance, paracusia);
             }
-        }
+        }*/
+        // Coyote End.
 
         switch (sm.PreferredDelamType)
         {
