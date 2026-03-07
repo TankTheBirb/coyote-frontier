@@ -779,7 +779,8 @@ public sealed partial class SupermatterSystem
         _light.SetRadius(uid, 10f * scalar, light);
         _light.SetColor(uid, Color.FromHsv(hsvFinal), light);
     }
-
+    /*
+    //Coyote: Until there's a better system for this, we should disable it.
     /// <summary>
     /// Checks for
     /// </summary>
@@ -827,6 +828,8 @@ public sealed partial class SupermatterSystem
         if (TryComp<AppearanceComponent>(uid, out var appearance))
             _appearance.SetData(uid, SupermatterVisuals.Psy, sm.PsyCoefficient, appearance);
     }
+    */
+    //End Coyote
 
     /// <summary>
     /// Sets the supermatter's status and speech sound based on thresholds

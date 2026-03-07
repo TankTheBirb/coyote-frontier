@@ -126,7 +126,7 @@ public sealed partial class SupermatterSystem : EntitySystem
             HandleDelamination(uid, sm);
 
         HandleLight(uid, sm);
-        HandleVision(uid, sm);
+        //HandleVision(uid, sm); // Coyote: There's no such thing as code to prevent you from hearing things if you don't have glasses. Yeet.
         HandleStatus(uid, sm);
         HandleSoundLoop(uid, sm);
         HandleAccent(uid, sm);
