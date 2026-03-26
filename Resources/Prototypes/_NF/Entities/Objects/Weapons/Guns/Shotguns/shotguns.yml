@@ -40,6 +40,14 @@
     node: start
   - type: NFWeaponDetails
     manufacturer: weapon-details-manufacturer-frontier-gunsmith-consortium
+  - type: Gun
+    burstFireRate: 8
+    shotsPerBurst: 2
+    burstCooldown: 1.0
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    - Burst
 
 - type: entity
   id: NFWeaponShotgunEnforcer

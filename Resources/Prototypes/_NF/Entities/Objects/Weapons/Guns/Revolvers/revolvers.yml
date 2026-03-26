@@ -10,6 +10,8 @@
     sprite: Objects/Weapons/Guns/Revolvers/inspector.rsi
   - type: Clothing
     sprite: Objects/Weapons/Guns/Revolvers/inspector.rsi
+  - type: Gun
+    fireRate: 6
 
 - type: entity
   id: NFWeaponRevolverWard45
