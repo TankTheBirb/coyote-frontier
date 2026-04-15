@@ -158,6 +158,9 @@
   - type: Fiber
     fiberMaterial: fibers-nitrile
   - type: FingerprintMask
+  - type: GloveHealTimeModifier
+    medicalUseModifier: 0.25
+
 
 - type: entity
   parent: ClothingHandsButcherable
